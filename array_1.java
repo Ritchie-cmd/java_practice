@@ -2,14 +2,14 @@ import java.util.Scanner;
 public class array_1{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
+        int sum = 0;
 
-        String[] cars = new String[5];
+        System.out.print("input a number:");
+        int input1 = sc.nextInt();
+        System.out.print("input a number:");
+        int input2 = sc.nextInt();
 
-        
-        
-        for(int i = 0; i < cars.length; i++){
-            System.out.print(""+( i + 1)+":CARS: ");
-            cars[i] = sc.nextLine();
-        }       
+        sum = input1 + input2;
+        System.out.print(sum);
     }
 }

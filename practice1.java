@@ -1,21 +1,19 @@
+import java.util.Scanner;
 public class practice1 {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-        for(int r = 1; r <= 3; r++){
-            for(int c = 1; c <= 3; c++){
-                if(r == 2 && c == 2){
-                    System.out.print(" ");
-                }else{ 
-                    System.out.print("*");
-                }
-            }
-            System.out.println();
+        while (true) {
+            
+        
+        System.out.print("enter a number: ");
+        int num = sc.nextInt();
+        int square = 0;
+
+        square = num * num;
+
+        System.out.println("the square of "+num+" is "+square);
+ 
         }
     }
 } 
-
-
-// expected output
-//    ***
-//    * *
-//    ***
